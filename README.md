@@ -26,6 +26,7 @@ A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that c
 | **Docker Install** | Self-host with Docker (recommended) | [Docker Guide](https://manual.seafile.com/docker/deploy_seafile_with_docker/) |
 | **Manual Install** | Self-host on Linux server | [Manual Guide](https://manual.seafile.com/deploy/) |
 | **Synology NAS** | Run on Synology NAS | [Synology Package](https://www.seafile.com/en/download/) |
+| **UGREEN NAS** | Run on UGREEN NAS via Docker | [Docker Guide](https://manual.seafile.com/docker/deploy_seafile_with_docker/) |
 | **Raspberry Pi** | Self-host on a Pi | [Pi Guide](https://manual.seafile.com/deploy/deploy_with_raspberrypi/) |
 
 **Already using another cloud storage?** This MCP server is specifically for Seafile. For other services, check out:
