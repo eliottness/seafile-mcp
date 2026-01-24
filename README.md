@@ -33,6 +33,14 @@ A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that c
 - Dropbox → Community MCP servers
 - Local files → [MCP Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)
 
+### Why This MCP Server?
+
+- **Direct connection** - Connects straight to your Seafile server, no middleman
+- **Privacy-first** - Your data never leaves your infrastructure
+- **Free & open source** - No subscriptions, no vendor lock-in
+- **Full control** - Inspect, modify, and extend the code as needed
+- **Self-hosted** - Runs locally alongside your self-hosted Seafile
+
 ---
 
 ## What Can You Do With This?
