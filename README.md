@@ -29,11 +29,6 @@ A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that c
 | **UGREEN NAS** | Run on UGREEN NAS via Docker | [Docker Guide](https://manual.seafile.com/docker/deploy_seafile_with_docker/) |
 | **Raspberry Pi** | Self-host on a Pi | [Pi Guide](https://manual.seafile.com/deploy/deploy_with_raspberrypi/) |
 
-**Already using another cloud storage?** This MCP server is specifically for Seafile. For other services, check out:
-- Google Drive → [MCP Google Drive](https://github.com/modelcontextprotocol/servers)
-- Dropbox → Community MCP servers
-- Local files → [MCP Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)
-
 ### Why This MCP Server?
 
 - **Direct connection** - Connects straight to your Seafile server, no middleman
