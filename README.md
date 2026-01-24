@@ -5,6 +5,36 @@
 
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that connects Claude to your Seafile file storage. This lets you ask Claude to browse, search, read, and manage files on your self-hosted Seafile server using natural language.
 
+---
+
+## What is Seafile?
+
+[Seafile](https://www.seafile.com/) is an open-source, self-hosted file sync and share platform - similar to Dropbox or Google Drive, but you control your own data. It's popular for personal use, teams, and enterprises who want privacy and control over their files.
+
+**Why Seafile?**
+- **Self-hosted**: Your files stay on your own server
+- **Privacy-focused**: No third-party access to your data
+- **Fast sync**: Efficient file synchronization across devices
+- **Libraries**: Organize files into encrypted or unencrypted libraries
+- **Cross-platform**: Apps for Windows, Mac, Linux, iOS, Android
+
+**Don't have Seafile yet?** Here's how to get started:
+
+| Option | Description | Link |
+|--------|-------------|------|
+| **Seafile Cloud** | Hosted by Seafile (easiest) | [cloud.seafile.com](https://cloud.seafile.com/) |
+| **Docker Install** | Self-host with Docker (recommended) | [Docker Guide](https://manual.seafile.com/docker/deploy_seafile_with_docker/) |
+| **Manual Install** | Self-host on Linux server | [Manual Guide](https://manual.seafile.com/deploy/) |
+| **Synology NAS** | Run on Synology NAS | [Synology Package](https://www.seafile.com/en/download/) |
+| **Raspberry Pi** | Self-host on a Pi | [Pi Guide](https://manual.seafile.com/deploy/deploy_with_raspberrypi/) |
+
+**Already using another cloud storage?** This MCP server is specifically for Seafile. For other services, check out:
+- Google Drive → [MCP Google Drive](https://github.com/modelcontextprotocol/servers)
+- Dropbox → Community MCP servers
+- Local files → [MCP Filesystem](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)
+
+---
+
 ## What Can You Do With This?
 
 Once set up, you can ask Claude things like:
