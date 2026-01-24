@@ -43,20 +43,14 @@ A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that c
 
 Once set up, you can ask Claude things like:
 
-**Travel & Bookings**
+**Document Lookups**
 - "What are my flight details for the Hawaii trip?"
 - "When is my car rental pickup?"
-- "Show me all my upcoming travel documents"
-
-**Document Lookups**
 - "Find my tax files from 2024"
 - "What's in my Immigration folder?"
 - "Show me my recent receipts"
-
-**Family Files**
 - "List all of Mom's travel folders"
 - "Find Dad's visa documents"
-- "What trips have we taken together?"
 
 **Organization**
 - "Create a new folder called '2025 Taxes'"
