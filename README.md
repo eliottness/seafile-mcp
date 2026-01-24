@@ -310,6 +310,20 @@ python src/server.py
 
 ---
 
+## Roadmap
+
+Features planned for future releases:
+
+| Feature | Status | Description |
+|---------|--------|-------------|
+| **PDF reading** | Planned | Extract text from PDF files so Claude can answer questions about receipts, contracts, etc. |
+| **Image OCR** | Idea | Extract text from images using OCR |
+| **File upload** | Idea | Upload files to Seafile via Claude |
+
+Have a feature request? [Open an issue](https://github.com/setugk/seafile-mcp/issues)!
+
+---
+
 ## Security
 
 > **Important:** Please read [SECURITY.md](SECURITY.md) for full security considerations.
