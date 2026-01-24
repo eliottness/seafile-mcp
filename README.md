@@ -39,16 +39,34 @@ A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that c
 
 ---
 
-## What Can You Do With This?
+## What can you do with this MCP server?
 
 Once set up, you can ask Claude things like:
 
-- "List all my libraries"
-- "Show me what's in my Documents folder"
-- "Read the contents of notes.txt"
-- "Create a new folder called 'Projects'"
-- "Move report.pdf to the Archive folder"
-- "Search for files containing 'invoice'"
+**Travel & Bookings**
+- "What are my flight details for the Hawaii trip?"
+- "When is my car rental pickup?"
+- "Show me all my upcoming travel documents"
+
+**Document Lookups**
+- "Find my tax files from 2024"
+- "What's in my Immigration folder?"
+- "Show me my recent receipts"
+
+**Family Files**
+- "List all of Mom's travel folders"
+- "Find Dad's visa documents"
+- "What trips have we taken together?"
+
+**Organization**
+- "Create a new folder called '2025 Taxes'"
+- "Move the completed trip to Archive"
+- "What's in my 'Ideas' folder?"
+
+**Quick Search**
+- "Find all PDFs related to insurance"
+- "Which folders were modified this month?"
+- "Do I have a copy of my lease agreement?"
 
 ## Features
 
