@@ -336,17 +336,39 @@ Have a feature request? [Open an issue](https://github.com/setugk/seafile-mcp/is
 
 ---
 
-## Security
+## Security & Privacy
 
 > **Important:** Please read [SECURITY.md](SECURITY.md) for full security considerations.
 
-**Key points:**
+### Protecting Your Credentials
 
 - **Never commit your `.env` file** - It contains your API token
-- **API tokens grant full access** to your Seafile account - treat them like passwords
-- **Review the code** before running - inspect `src/server.py` to understand what it does
-- **Secure file permissions** - Run `chmod 600 .env` to restrict access to your credentials
-- **Consider token scope** - Some Seafile deployments support scoped tokens with limited permissions
+- **Secure file permissions** - Run `chmod 600 .env` to restrict access
+- **Rotate tokens periodically** - Generate new tokens and revoke old ones
+- **Use HTTPS** - Always connect to your Seafile server over HTTPS
+
+### What Claude Can See
+
+When using this MCP server:
+- Claude sees **file and folder names** when you browse
+- Claude sees **file contents** when you ask to read them
+- Conversations are processed by Anthropic's servers
+
+**Best practice:** Avoid asking Claude to read highly sensitive files (passwords, private keys, financial account numbers).
+
+### What Claude Can Do
+
+The MCP server allows Claude to:
+- Browse, read, and search files
+- Create, rename, move, copy, and **delete** files/folders
+
+**Be careful with destructive commands.** Consider using a read-only API token if your Seafile server supports scoped permissions.
+
+### Local Machine Security
+
+- The MCP server runs locally with your user permissions
+- Anyone with access to your machine could read your `.env` file
+- Use standard device security (lock screen, disk encryption)
 
 **Reporting vulnerabilities:** See [SECURITY.md](SECURITY.md) for responsible disclosure guidelines.
 
