@@ -376,6 +376,39 @@ async def get_upload_link(library_id: str, path: str = "/") -> str:
 
 
 @mcp.tool()
+async def find_files(query: str, library_id: str) -> list:
+    """Search for files by name in a library (filename search, like find command).
+
+    Args:
+        query: Search query string (searches filenames/paths)
+        library_id: Library ID to search in (required)
+    """
+    async with httpx.AsyncClient() as client:
+        params = {"q": query, "repo_id": library_id}
+
+        response = await client.get(
+            f"{SEAFILE_URL}/api/v2.1/search-file/",
+            headers=get_headers(),
+            params=params,
+            timeout=30.0,
+        )
+        if response.status_code == 200:
+            data = response.json().get("data", [])
+            return [
+                {
+                    "path": item.get("path"),
+                    "name": item.get("path").split("/")[-1] if item.get("path") else "",
+                    "size": item.get("size"),
+                    "type": item.get("type"),
+                    "modified": item.get("mtime"),
+                    "library_id": library_id,
+                }
+                for item in data
+            ]
+        return [{"error": f"Status {response.status_code}: {response.text}"}]
+
+
+@mcp.tool()
 async def search_files(query: str, library_id: str = "") -> list:
     """Search for files across libraries.
 
